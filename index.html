@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Knoten-Kalkulator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/kk/">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/kk.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Knoten-Kalkulator</a>
+      </button>
+    </nav>
+<div class="container">
+<div class="row">
+
+<div id="knotCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+  <div class="carousel-inner">
+  </div>
+  <a class="carousel-control-prev" href="#knotCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#knotCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+</div>
+
+<div class="row mx-1 my-2">
+<form>
+  <div class="form-group">
+    <input type="number" class="form-control form-control-lg" id="length" placeholder="Gewünschte Länge" required>
+  </div>
+</form>
+</div>
+
+  <div class="row mx-1">Benötigte Länge(n) in cm</div>
+  <div class="row mx-1 results"></div>
+
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.js/dist/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/kk.js"></script>
+  </body>
+</html>
