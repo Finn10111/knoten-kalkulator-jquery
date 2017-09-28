@@ -50,7 +50,7 @@ $(document).ready(function() {
 
     $('#length').change(function(e){
         calcLength();
-    }); 
+    });
 
     $('#knotCarousel').on('slide.bs.carousel', function () {
         displayLoader();
@@ -66,6 +66,7 @@ $(document).ready(function() {
         if ( length == 0 ) {
             $('div.results').append('<span class="badge badge-warning">Bitte die gewünschte Länge angeben</span>&nbsp;');
         } else {
+            var factors = $('div.carousel-inner').find('div.active').find('input[name="factor"]');
             $.each(factors, function(index, value){
                 var result = length * value.value;
                 console.log(length);
@@ -73,7 +74,6 @@ $(document).ready(function() {
                 $('div.results').append('<span class="badge badge-primary">'+result.toFixed(1)+'</span>&nbsp;');
             });
         }
-        var factors = $('div.carousel-inner').find('div.active').find('input[name="factor"]');
         console.log(factors);
     }
 
